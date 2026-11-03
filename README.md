@@ -1,19 +1,19 @@
 # Music Listening
 
-I am collecting music-listening records from my Airbuds history for Dear Data 100. Each row represents one displayed listen, with an ID, date, assigned time, song, artists and source order. My current dataset contains 31 records; it is a selected sample, not my complete listening history.
+I've collected 31 listens from my Airbuds history for Dear Data 100. Each row records one listen, including its ID, date, assigned time, song, artists and position in the screenshot.
 
-I use colour to distinguish the first listed artist and a gold ring to identify tracks repeated in my sample. I can hover over a record to inspect its details.
+In my sketch, each disc represents one listen. Its centre colour shows the first artist listed, and a gold ring means the same track appears more than once in my sample. Hovering over a disc shows the details.
 
 ## Run
 
-I open DearDataMusic/DearDataMusic.pde in Processing Java mode, keep its data folder beside it, and press Run. I use the left/right arrows to change pages and S to save a PNG.
+To run my sketch, open `DearDataMusic/DearDataMusic.pde` in Processing's Java mode and press Run. The `data` folder belongs beside the sketch file. Press S to save a PNG. If the collection grows beyond 100 listens, the arrow keys switch pages.
 
 ## Progress
 
-I have organised my initial records and a first sketch. I still need to verify its visual output in Processing, confirm the date of the screenshot labelled Today, and continue collecting observations towards 100. I have not yet completed those checks.
+I've run the sketch in Processing and checked that all 31 discs appear. When I hovered over the first one, I could see “Spirit” by J Hus. I still need 69 more listens to reach 100.
 
 ## Data notes
 
-I use assigned times between noon and 2 p.m. where exact times are unavailable, following the permission provided for this task. I do not use those times to infer actual listening duration or time-of-day patterns. I retain repeated entries as separate listens and omit obscured entries. The final row currently uses 20 October for the screenshot labelled Today; I need to confirm that date.
+My screenshots cover part of my listening history. I've kept repeated plays as separate entries and left out entries I couldn't read. Where the exact time was missing, I've assigned a time between noon and 2 p.m. I can't use those times to work out when or how long I listened.
 
-I keep changes in this repository as I make progress.
+I've used 20 October for the last row for now. The screenshot says “Today”, so I still need to check when it was taken.
