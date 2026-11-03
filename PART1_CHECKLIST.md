@@ -2,27 +2,24 @@
 
 ## Checks
 
-- [ ] I confirm the date of the source screenshot labelled Today.
-- [ ] I check my 31 records against the source screenshots and avoid duplicate entries from overlapping screenshots.
-- [ ] I distinguish assigned times from verified listening times.
-- [ ] I open DearDataMusic/DearDataMusic.pde in Processing Java mode with its data folder beside it.
-- [ ] I run the sketch and check that all 31 records appear without an error.
-- [ ] I hover over records and compare the displayed details with the CSV.
-- [ ] I check artist colours and repeated-track rings, then press S and inspect the saved PNG.
-- [ ] I prepare my repository URL, a brief topic and progress description, and a data image for submission.
+- [x] I've opened the sketch in Processing and checked that all 31 records appear.
+- [x] I've hovered over the first record and seen “Spirit” by J Hus in the details panel.
+- [ ] I still need to confirm the date on the screenshot labelled “Today”.
+- [ ] I'll compare the CSV with my screenshots, especially where two screenshots overlap.
+- [ ] I'll check the artist colours and gold rings against the CSV, then press S and open the saved PNG.
 
-## Methods
+## Method practice
 
-I will attempt these in a blank sketch before checking the example:
+I'll try these in a blank sketch before looking at the worked example. They're practice questions for writing a method that returns a value.
 
-1. I write addFive(int number), returning number plus five. I expect addFive(7) to return 12.
-2. I write triple(int number), returning three times the input. I expect triple(4) to return 12.
-3. I write add(int a, int b), returning their sum. I expect add(3, 8) to return 11.
-4. I write remaining(int collected), returning 100 minus the input. I expect remaining(31) to return 69.
+1. Add five to a number. `addFive(7)` should return 12.
+2. Triple a number. `triple(4)` should return 12.
+3. Add two numbers together. `add(3, 8)` should return 11.
+4. Work out how many listens I still need to reach 100. `remaining(31)` should return 69.
 
-### Example
+### Worked example
 
-```java
+~~~java
 void setup() {
   int answer = addFive(7);
   println(answer);
@@ -31,25 +28,21 @@ void setup() {
 int addFive(int number) {
   return number + 5;
 }
-```
+~~~
 
-I read the first int as the return type, addFive as the method name, and int number as the parameter. The call supplies 7; return sends 12 back to the caller. I define the method outside setup(). A void method does not return a value.
+When I call `addFive(7)`, the parameter `number` takes the value 7. The first `int` tells me the method returns a whole number. Here it returns 12, which `setup()` prints. I've defined `addFive` outside `setup()`. The word `void` means a method returns no value.
 
 ## Next steps
 
-I will commit genuine changes on separate days, such as corrected source dates, additional listening records or fixes after running the sketch. Multiple commits on one date still represent one commit day. I have not marked the checks above complete yet.
+I'll commit updates as I check the dates and add more listens. Several commits on the same day count as one day of progress.
 
 ## Submission
 
-- [ ] I check the current Part 1 form and instructions before submitting.
-- [ ] I use my repository URL: https://github.com/SriRaaCha1/Creative_Coding.
-- [ ] I check that the branch I submit contains my latest files and that my assessor has the required access.
-- [ ] I prepare one JPEG or PNG showing my collected data, with readable column names and records.
-- [ ] I inspect the image at normal size and check that it contains no unrelated account details.
-- [ ] I update the description below if my record count or progress changes.
-- [ ] I attach the image, enter the URL and description, and complete the submission steps.
-- [ ] I reopen the submission page to verify the saved text, attachment and submission status.
+- [ ] I'll check the Moodle instructions and make sure my assessor can open the latest files from [my repository](https://github.com/SriRaaCha1/Creative_Coding).
+- [ ] I'll prepare one JPEG or PNG of my data and check that the headings and records are readable, with no unrelated account details showing.
+- [ ] I'll update my progress below, paste it into Moodle with the repository link and attach the image.
+- [ ] After submitting, I'll reopen the page to check the text, image and submission status.
 
-### Draft
+### My progress
 
-I am collecting music-listening observations from my Airbuds history. My current sample contains 31 records. Each record contains an ID, date, assigned time, song, artists and source order. I use assigned times between noon and 2 p.m. where exact times are unavailable; these do not show my actual listening times. I have organised the records in a CSV and added a Processing sketch to my repository. I still need to confirm the date of the screenshot labelled Today, check the visual output in Processing and collect more observations.
+I've collected 31 listens from my Airbuds history. For each one, I've recorded the song, the artists, the date and its position in the screenshot, and given it an ID. Where the exact time was missing, I've assigned a time between noon and 2 p.m. I've saved the records in a CSV and tested the sketch in Processing. All 31 discs appear, and hovering over a disc shows its details. I still need to confirm the date labelled “Today” and collect more listens.
