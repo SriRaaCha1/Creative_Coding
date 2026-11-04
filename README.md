@@ -8,7 +8,7 @@ I've tested my sketch in Processing and checked that all 31 records appear and t
 
 I've kept repeated plays as separate records and left out entries I couldn't read. I've assigned times between noon and 2 p.m. where exact times were unavailable; these are not recorded listening times. My sample covers only part of my listening history.
 
-I've provisionally dated the final record 20 October because its source screenshot says “Today”. I still need to confirm that date.
+
 
 ## Run
 
