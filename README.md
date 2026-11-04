@@ -12,4 +12,4 @@ I've kept repeated plays as separate records and left out entries I couldn't rea
 
 ## Run
 
-I run `DearDataMusic/DearDataMusic.pde` in Processing's Java mode with `listening.csv` in the adjacent `data` folder. I press S to save an image.
+I ran `DearDataMusic/DearDataMusic.pde` in Processing's Java mode with `listening.csv` in the adjacent `data` folder. Then save the image.
