@@ -11,7 +11,7 @@ void setup() {
   size(1200, 900);
   smooth();
   textFont(createFont("SansSerif", 14));
-  // The first line contains the headings. Each row after that represents one listen.
+  // I skip the headings and read one listen from each remaining row.
   String[] lines = loadStrings("listening.csv");
   if (lines == null) {
     loadError = "Missing data/listening.csv. Keep the data folder with the sketch.";
@@ -121,7 +121,7 @@ void keyPressed() {
   if (key == 's' || key == 'S') saveFrame("listening-####.png");
 }
 
-// Each Listen stores one entry from my history and draws its disc.
+// I use each Listen object to store one entry and draw its disc.
 class Listen {
   int id;
   String date, time, song, artists, primaryArtist;
