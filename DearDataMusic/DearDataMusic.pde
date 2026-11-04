@@ -1,5 +1,5 @@
-// Dear Data: Listening Collection — Processing Java mode.
-// I describe my sources and assigned times in ../README.md.
+// My listening collection (Processing, Java mode)
+// I've explained where my data came from and how I assigned the times in ../README.md.
 ArrayList<Listen> listens = new ArrayList<Listen>();
 ArrayList<String> artistNames = new ArrayList<String>();
 int page = 0;
@@ -11,7 +11,7 @@ void setup() {
   size(1200, 900);
   smooth();
   textFont(createFont("SansSerif", 14));
-  // Each line is a row; the first row contains column headings.
+  // I skip the headings and read one listen from each remaining row.
   String[] lines = loadStrings("listening.csv");
   if (lines == null) {
     loadError = "Missing data/listening.csv. Keep the data folder with the sketch.";
@@ -97,7 +97,7 @@ void draw() {
        + "     LEFT / RIGHT: pages     S: save image", 40, 872);
 }
 
-// A value-returning method: returns how many matching events are in the data.
+// I count a repeat when both the song title and the full artist list match.
 int countPlays(String title, String artists) {
   int total = 0;
   for (Listen item : listens) {
@@ -121,7 +121,7 @@ void keyPressed() {
   if (key == 's' || key == 'S') saveFrame("listening-####.png");
 }
 
-// Each object holds one event and knows how to draw it.
+// I use each Listen object to store one entry and draw its disc.
 class Listen {
   int id;
   String date, time, song, artists, primaryArtist;
